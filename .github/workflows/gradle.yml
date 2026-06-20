@@ -19,8 +19,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     
-    - name: Build with Gradle
-      run: chmod +x gradlew && ./gradlew build -x test
+    - name: Make gradlew executable
+      run: chmod +x gradlew
     
-    - name: Run Tests
-      run: ./gradlew test
+    - name: Build with Gradle
+      run: ./gradlew build --info
+      env:
+        JAVA_TOOL_OPTIONS: -Djava.awt.headless=true
