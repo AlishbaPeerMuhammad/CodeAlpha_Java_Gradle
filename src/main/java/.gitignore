@@ -1,0 +1,39 @@
+# Build folders
+build/
+dist/
+.gradle/
+*.jar
+*.war
+
+# IDE and Editor
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Compiled files
+*.class
+*.pyc
+out/
+
+# Dependencies
+.m2/
+
+# Logs
+*.log
+logs/
+
+# Temp files
+temp/
+tmp/
+*.tmp
